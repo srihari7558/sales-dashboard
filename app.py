@@ -113,11 +113,16 @@ filtered_df.groupby('Sub-Category')['Sales']
 
 st.bar_chart(top_products)
 
+st.markdown("---")   # (optional but clean)
+
+st.subheader("📌 Key Insights")
+
+st.write("""
+- West region generates highest sales  
+- Technology category drives revenue  
+- Sales show strong growth over time  
+""")
 # =========================
-
-# FOOTER
-
-# =========================
-
 st.markdown("---")
 st.caption("Built using Streamlit | Sales Data Analysis Project")
+# =========================
